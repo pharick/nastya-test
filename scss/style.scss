@@ -1,67 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
-@keyframes fadeInLeft {
-  from {
-    opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-
-@keyframes bounceInRight {
-  from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
-  from {
-    opacity: 0;
-    transform: translate3d(3000px, 0, 0);
-  }
-
-  60% {
-    opacity: 1;
-    transform: translate3d(-25px, 0, 0);
-  }
-
-  75% {
-    transform: translate3d(10px, 0, 0);
-  }
-
-  90% {
-    transform: translate3d(-5px, 0, 0);
-  }
-
-  to {
-    transform: none;
-  }
-}
-
-
-@keyframes tada {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  10%, 20% {
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  }
-
-  30%, 50%, 70%, 90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
-  40%, 60%, 80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-}
+@import 'keyframes';
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -73,39 +11,43 @@ body {
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+
+  img {
+    float: left;
+    animation: fadeInLeft 2s;
+  }
+
+  .start:hover {
+    animation: tada 1s;
+  }
+
+  h1 {
+    font-size: 4em;
+    position: absolute;
+    top: 150px;
+    left: 380px;
+
+    span {
+      display: block;
+      transform: translate3d(3000px, 0, 0);
+
+      &:first-child {
+        animation: bounceInRight 1s 1.5s forwards;
+      }
+
+      &:nth-child(2) {
+        animation: bounceInRight 1s 2s forwards;
+      }
+
+      &:last-child {
+        animation: bounceInRight 1s 2.5s forwards;
+      }
+    }
+  }
 }
 
-.splash > h1 {
-  font-size: 4em;
-  position: absolute;
-  top: 150px;
-  left: 380px;
-}
-
-.splash > h1 > span {
-  display: block;
-  transform: translate3d(3000px, 0, 0);
-}
-
-.splash > h1 > span:first-child {
-  animation: bounceInRight 1s 1.5s forwards;
-}
-
-.splash > h1 > span:nth-child(2) {
-  animation: bounceInRight 1s 2s forwards;
-}
-
-.splash > h1 > span:last-child {
-  animation: bounceInRight 1s 2.5s forwards;
-}
-
-.splash > h1 > span.highlight {
+.highlight {
   color: #FF3D55;
-}
-
-.splash img {
-  float: left;
-  animation: fadeInLeft 2s;
 }
 
 .start {
@@ -119,8 +61,4 @@ body {
   position: absolute;
   top: 310px;
   left: 650px;
-}
-
-.start:hover {
-  animation: tada 1s;
 }
