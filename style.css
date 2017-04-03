@@ -1,114 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translate3d(-100%, 0, 0);
-  }
-
+    transform: translate3d(-100%, 0, 0); }
   to {
     opacity: 1;
-    transform: none;
-  }
-}
+    transform: none; } }
 
 @keyframes bounceInRight {
   from, 60%, 75%, 90%, to {
-    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-  }
-
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1); }
   from {
     opacity: 0;
-    transform: translate3d(3000px, 0, 0);
-  }
-
+    transform: translate3d(3000px, 0, 0); }
   60% {
     opacity: 1;
-    transform: translate3d(-25px, 0, 0);
-  }
-
+    transform: translate3d(-25px, 0, 0); }
   75% {
-    transform: translate3d(10px, 0, 0);
-  }
-
+    transform: translate3d(10px, 0, 0); }
   90% {
-    transform: translate3d(-5px, 0, 0);
-  }
-
+    transform: translate3d(-5px, 0, 0); }
   to {
-    transform: none;
-  }
-}
-
+    transform: none; } }
 
 @keyframes tada {
   from {
-    opacity: 0;
-    transform: scale3d(1, 1, 1);
-  }
-
+    transform: scale3d(1, 1, 1); }
   10%, 20% {
-    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
-  }
-
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg); }
   30%, 50%, 70%, 90% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
-  }
-
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg); }
   40%, 60%, 80% {
-    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
-  }
-
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg); }
   to {
-    opacity: 1;
-    transform: scale3d(1, 1, 1);
-  }
-}
+    transform: scale3d(1, 1, 1); } }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 .splash {
   width: 900px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 .splash > h1 {
   font-size: 4em;
   position: absolute;
   top: 150px;
-  left: 380px;
-}
+  left: 380px; }
 
 .splash > h1 > span {
   display: block;
-  transform: translate3d(3000px, 0, 0);
-}
+  transform: translate3d(3000px, 0, 0); }
 
 .splash > h1 > span:first-child {
-  animation: bounceInRight 1s 1.5s forwards;
-}
+  animation: bounceInRight 1s 1.5s forwards; }
 
 .splash > h1 > span:nth-child(2) {
-  animation: bounceInRight 1s 2s forwards;
-}
+  animation: bounceInRight 1s 2s forwards; }
 
 .splash > h1 > span:last-child {
-  animation: bounceInRight 1s 2.5s forwards;
-}
+  animation: bounceInRight 1s 2.5s forwards; }
 
 .splash > h1 > span.highlight {
-  color: #FF3D55;
-}
+  color: #FF3D55; }
 
 .splash img {
   float: left;
-  animation: fadeInLeft 2s;
-}
+  animation: fadeInLeft 2s; }
 
 .start {
   display: inline-block;
@@ -120,10 +81,7 @@ body {
   border: 2px solid black;
   position: absolute;
   top: 310px;
-  left: 650px;
-  opacity: 0;
-  animation: tada 1s 3s forwards;
-}
+  left: 650px; }
 
 .start:hover {
-}
+  animation: tada 1s; }

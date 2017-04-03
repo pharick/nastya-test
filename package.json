@@ -2,13 +2,12 @@
   "name": "nastya-test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "dependencies": {
+  "main": "index.html",
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
     "node-sass": "^4.5.2"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC"
