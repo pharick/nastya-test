@@ -88,8 +88,7 @@ input[type="radio"] {
     padding: 10px;
     transition: transform 0.2s; }
     input[type="radio"] ~ label:hover {
-      border-color: #FF3D55;
-      color: #FF3D55; }
+      border-color: #FF3D55; }
   input[type="radio"]:checked ~ label {
     color: black;
     background-color: #FF3D55;
