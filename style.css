@@ -62,18 +62,18 @@ body {
 header {
   text-align: center; }
 
+h1 {
+  font-size: 2em; }
+
+button {
+  font-size: 1em; }
+
 main {
   text-align: center;
   width: 600px;
   margin: 0 auto;
   background-color: lightgray;
   padding: 20px; }
-
-ul {
-  padding: 0;
-  list-style: none; }
-  ul li {
-    margin: 10px; }
 
 input[type="radio"] {
   visibility: hidden;
@@ -95,20 +95,36 @@ input[type="radio"] {
     border-color: #FF3D55;
     transform: scale(1.02); }
 
+.question {
+  font-size: 1.35em; }
+
+.answers {
+  padding: 0;
+  list-style: none; }
+  .answers li {
+    margin: 10px; }
+
 .highlight {
   color: #FF3D55; }
 
 .button {
-  display: inline-block;
-  background-color: #22456D;
-  padding: 15px;
+  background-color: #FF3D55;
+  padding: 10px 15px;
   color: white;
+  border: 1px solid black;
+  border-radius: 6px;
+  float: right; }
+  .button:hover {
+    background-color: black; }
+
+.button.start {
+  display: inline-block;
   font-size: 2em;
   text-decoration: none;
-  border: 2px solid black;
   position: absolute;
   top: 310px;
-  left: 650px; }
+  left: 650px;
+  background-color: #306199; }
 
 .button.start:hover {
   animation: tada 1s; }
