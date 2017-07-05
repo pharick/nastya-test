@@ -12,8 +12,8 @@
   </header>
 
   <main>
-    <p>Сколько раз в день ты говоришь "мяу"?</p>
-    <ul>
+    <p class="question">Сколько раз в день ты говоришь "мяу"?</p>
+    <ul class="answers">
       <li>
         <input type="radio" name="answer" id="answer-1">
         <label for="answer-1">Ни одного</label>
@@ -30,11 +30,11 @@
         <input type="radio" name="answer" id="answer-4">
         <label for="answer-4">Около 10 раз</label>
       </li>
-      <li>
-        <input type="radio" name="answer" id="answer-5">
-        <label for="answer-5">Каждые 5 минут</label>
-      </li>
     </ul>
+    <button class="button">Далее</button>
   </main>
+
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="test.js"></script>
 </body>
 </html>
