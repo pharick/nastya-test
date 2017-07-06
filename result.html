@@ -12,13 +12,15 @@
   </header>
 
   <main id="question" class="cf">
-    <p class="text"></p>
-    <ul class="answers">
-    </ul>
-    <button class="button next">Следующий вопрос</button>
+    <p class="text">Вы Настя Зайкова на <span class="result"></span>%</p>
+    <a href="index.html" class="button">Пройти ещё раз</a>
   </main>
 
   <script src="/node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="test.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('.result').text(sessionStorage['result']);
+    });
+  </script>
 </body>
 </html>

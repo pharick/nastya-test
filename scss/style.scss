@@ -15,10 +15,6 @@ h1 {
   font-size: 2em;
 }
 
-button {
-  font-size: 1em;
-}
-
 main {
   text-align: center;
   width: 600px;
@@ -74,12 +70,14 @@ main {
 }
 
 .button {
+  font-size: 1em;
   background-color: #FF3D55;
   padding: 10px 15px;
   color: white;
   border: 1px solid black;
   border-radius: 6px;
   float: right;
+  text-decoration: none;
 
   &:hover {
     background-color: black;
@@ -89,7 +87,6 @@ main {
 .button.start {
   display: inline-block;
   font-size: 2em;
-  text-decoration: none;
   position: absolute;
   top: 310px;
   left: 650px;
