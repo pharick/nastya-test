@@ -27,35 +27,6 @@ main {
   padding: 20px;
 }
 
-input[type="radio"] {
-  visibility: hidden;
-  display: block;
-  float: left;
-
-  ~ label {
-    background-color: #306199;
-    border: 1px solid black;
-    border-radius: 6px;
-    color: white;
-    display: block;
-    padding: 10px;
-    transition: transform 0.2s;
-
-    &:hover {
-      border-color: #FF3D55;
-    }
-  }
-
-  &:checked {
-    ~ label {
-        color: black;
-        background-color: #FF3D55;
-        border-color: #FF3D55;
-        transform: scale(1.02);
-    }
-  }
-}
-
 .question {
   font-size: 1.35em;
 }
@@ -65,7 +36,36 @@ input[type="radio"] {
   list-style: none;
 
   li {
-    margin: 10px;
+    margin: 10px 0;
+  }
+
+  input[type="radio"] {
+    visibility: hidden;
+    display: block;
+    float: left;
+
+    ~ label {
+      background-color: #306199;
+      border: 1px solid black;
+      border-radius: 6px;
+      color: white;
+      display: block;
+      padding: 10px;
+      transition: transform 0.2s;
+
+      &:hover {
+        border-color: #FF3D55;
+      }
+    }
+
+    &:checked {
+      ~ label {
+          color: black;
+          background-color: #FF3D55;
+          border-color: #FF3D55;
+          transform: scale(1.02);
+      }
+    }
   }
 }
 
@@ -94,8 +94,18 @@ input[type="radio"] {
   top: 310px;
   left: 650px;
   background-color: #306199;
+
+  &:hover {
+    animation: tada 1s;
+  }
 }
 
-.button.start:hover {
-  animation: tada 1s;
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
 }
