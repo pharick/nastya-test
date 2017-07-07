@@ -24,7 +24,7 @@ main {
   padding: 20px;
 }
 
-#question .text {
+.question .text {
   font-size: 1.35em;
 }
 
@@ -77,7 +77,6 @@ main {
   color: white;
   border: 1px solid black;
   border-radius: 6px;
-  float: right;
   text-decoration: none;
 
   &:hover {
@@ -85,23 +84,15 @@ main {
   }
 }
 
-.button.start {
-  display: inline-block;
-  font-size: 2em;
-  position: absolute;
-  top: 310px;
-  left: 650px;
-  background-color: #306199;
-
-  &:hover {
-    animation: tada 1s;
-  }
+.pull-right {
+  float: right;
+  margin-left: 10px;
 }
 
 .cf:before,
 .cf:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    display: table;
 }
 
 .cf:after {
