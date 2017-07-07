@@ -22,10 +22,10 @@ main {
   margin: 0 auto;
   background-color: lightgray;
   padding: 20px;
-}
 
-.question .text {
-  font-size: 1.35em;
+  p {
+    font-size: 1.35em;
+  }
 }
 
 .answers {
@@ -78,6 +78,7 @@ main {
   border: 1px solid black;
   border-radius: 6px;
   text-decoration: none;
+  display: inline-block;
 
   &:hover {
     background-color: black;
