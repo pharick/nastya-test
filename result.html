@@ -12,6 +12,7 @@
   </header>
 
   <main class="cf">
+    <progress max="100"></progress>
     <p>Вы <span class="highlight">Настя Зайкова</span> на <span class="result"></span>%</p>
     <a href="index.html" class="button">Пройти ещё раз</a>
   </main>
@@ -19,7 +20,9 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('.result').text(Math.round(sessionStorage['result'] / sessionStorage['questionAmount'] * 100));
+      var result = Math.round(sessionStorage['result'] / sessionStorage['questionAmount'] * 100);
+      $('.result').text(result);
+      $('progress').attr('value', result);
     });
   </script>
 </body>
