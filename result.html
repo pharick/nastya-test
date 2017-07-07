@@ -11,15 +11,15 @@
     <h1>Насколько ты <span class="highlight">Настя Зайкова</span></h1>
   </header>
 
-  <main id="question" class="cf">
-    <p class="text">Вы Настя Зайкова на <span class="result"></span>%</p>
+  <main class="cf">
+    <p class="text">Вы <span class="highlight">Настя Зайкова</span> на <span class="result"></span>%</p>
     <a href="index.html" class="button">Пройти ещё раз</a>
   </main>
 
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script>
     $(document).ready(function() {
-      $('.result').text(sessionStorage['result']);
+      $('.result').text(Math.round(sessionStorage['result'] / sessionStorage['questionAmount'] * 100));
     });
   </script>
 </body>
