@@ -32,3 +32,16 @@
     }
   }
 }
+
+.button.start {
+  display: inline-block;
+  font-size: 2em;
+  position: absolute;
+  top: 310px;
+  left: 650px;
+  background-color: #306199;
+
+  &:hover {
+    animation: tada 1s;
+  }
+}
